@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>購物車總額:</button>
+    <button>清空購物車</button>
+
+    <p>$1000</p>
+    <img src="noodle1.jpg">
+    <button onclick=priceAdd()
+    >加入購物車</button>
+
+    <p>$2500</p>
+    <img src="noodle2.jpg">
+    <button onclick=priceAdd2()
+    >加入購物車</button>
+    <script>
+        let totalPrice=0;
+        function priceAdd(){
+            totalPrice=totalPrice+1000;
+            console.log(totalPrice);
+        }
+        function priceAdd2(){
+            totalPrice=totalPrice+2500;
+            console.log(totalPrice);
+        }
+    </script>
+</body>
+</html>
